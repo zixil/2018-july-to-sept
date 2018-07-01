@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad695428-6e8a-4b72-b0ac-f8ebf517097f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/2018-july-to-sept.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/2018-july-to-sept/Main.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/2018-july-to-sept/_119_Pascal_s_Triangle_II/Solution.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/2018-july-to-sept/_139_Word_Break/Solution.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/2018-july-to-sept/_20_Valid_Parentheses/Solution.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/2018-july-to-sept/_50_Pow_x_n/Solution.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/_119_Pascal_s_Triangle_II/Solution.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/_139_Word_Break/Solution.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/_20_Valid_Parentheses/Solution.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/_50_Pow_x_n/Solution.java" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -316,12 +302,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530459239062</updated>
-      <workItem from="1530459243951" duration="5467000" />
+      <workItem from="1530459243951" duration="5732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5467000" />
+    <option name="totallyTimeSpent" value="5732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -412,7 +398,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
         </state>
       </provider>
