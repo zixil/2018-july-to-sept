@@ -1,25 +1,26 @@
 package _139_Word_Break;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    int sEnd;
 
     public boolean wordBreak(String s, List<String> wordDict) {
-        sEnd = s.length();
-        return wordBreak(s, wordDict, 0);
-    }
-
-    public boolean wordBreak(String s, List<String> wordDict, int start) {
-        int sLen = sEnd - start;
-        for (String i : wordDict) {
-            int len = i.length();
-            if (len > sLen) continue;
-            if (s.substring(start, start + len).equals(i)) {
-                if (len == sLen || wordBreak(s, wordDict, start + len))
-                    return true;
+        int sEnd = s.length();
+        boolean[] dp = new boolean[sEnd+1];
+        dp[0] = true;
+        for (int i = 1; i <= sEnd; ++i) {
+            for (int j = 0; j < i; ++j) {
+                dp[i]=false;
+                for (String k : wordDict) {
+                    if (dp[j] && s.substring(j, i).equals(k)) {
+                        dp[i] = true;
+                    }
+                }
+                if(dp[i]) break;
             }
         }
-        return false;
+        return dp[sEnd];
     }
+
 }
