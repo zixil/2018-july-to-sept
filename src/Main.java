@@ -1,11 +1,18 @@
-import _50_Pow_x_n.*;
+import _73_Set_Matrix_Zeroes.*;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args){
-        System.out.println(new Solution().myPow(1.00000 ,-2147483648));
+    public static void main(String[] args) {
+        int[][] array = {
+                {0},{1}
+        };
+        new Solution().setZeroes(array);
+        for (int[] i : array) {
+
+            System.out.println(Arrays.toString(i));
+        }
 
     }
 }
