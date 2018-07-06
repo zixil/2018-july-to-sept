@@ -1,11 +1,11 @@
-import _23_Merge_k_Sorted_Lists.*;
+import _200_Number_of_Islands.*;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        int[][] arrays={{1,4,5},{1,3,4},{2,6}};
-        System.out.println(new Solution().mergeKLists(ListNode.fromArrays(arrays)));
+        char[][] arrays = {{'1','1','1'},{'1','0','1'},{'1','1','1'}};
+        System.out.println(new Solution().numIslands(arrays));
     }
 }
