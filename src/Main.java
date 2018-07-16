@@ -1,12 +1,12 @@
-import _438_Find_All_Anagrams_in_a_String.*;
+import _406_Queue_Reconstruction_by_Height.*;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(new Solution().findAnagrams("baa",
-                "aa"
-        ));
+        int[][] array={{7,0}, {4,4}, {7,1}, {5,0}, {6,1}, {5,2}};
+        System.out.println(Arrays.deepToString(new Solution().reconstructQueue(array)));
     }
 }
