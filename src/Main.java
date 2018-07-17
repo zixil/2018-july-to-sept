@@ -1,4 +1,4 @@
-import _92_Reverse_Linked_List_II.*;
+import _10_Regular_Expression_Matching.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        /*
         int[] array={1,2,3,4,5};
         ListNode head=new ListNode(0);
         ListNode tail=head;
@@ -17,7 +18,8 @@ public class Main {
         for(int i=0;i<6;++i) {
             tmp=tmp.next;
         }
-        tail.next = tmp;
-         System.out.println(new Solution().reverseBetween(head.next,1,5));
+        tail.next = tmp;*/
+
+         System.out.println(new Solution().isMatch("aa","a*"));
     }
 }
