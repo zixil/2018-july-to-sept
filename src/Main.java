@@ -1,4 +1,4 @@
-import _310_Minimum_Height_Trees.*;
+import _92_Reverse_Linked_List_II.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -6,8 +6,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        /*
-        int[] array={-1,-7,7,-4,19,6,-9,-5,-2,-5};
+        int[] array={1,2,3,4,5};
         ListNode head=new ListNode(0);
         ListNode tail=head;
         for(int i:array){
@@ -19,8 +18,6 @@ public class Main {
             tmp=tmp.next;
         }
         tail.next = tmp;
-        */
-        int[] array={};
-         System.out.println(new Solution().findMinHeightTrees(5000, array));
+         System.out.println(new Solution().reverseBetween(head.next,1,5));
     }
 }
