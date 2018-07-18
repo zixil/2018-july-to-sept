@@ -1,4 +1,4 @@
-import _43_Multiply_Strings.*;
+import _134_Gas_Station.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -20,6 +20,7 @@ public class Main {
         }
         tail.next = tmp;*/
 
-         System.out.println(new Solution().multiply("6","501"));
+        int[] array1={2,3,4},array2={3,4,3};
+         System.out.println(new Solution().canCompleteCircuit(array1,array2));
     }
 }
