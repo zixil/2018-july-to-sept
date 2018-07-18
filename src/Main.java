@@ -1,4 +1,4 @@
-import _134_Gas_Station.*;
+import _387_First_Unique_Character_in_a_String.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -20,7 +20,7 @@ public class Main {
         }
         tail.next = tmp;*/
 
-        int[] array1={2,3,4},array2={3,4,3};
-         System.out.println(new Solution().canCompleteCircuit(array1,array2));
+        //int[] array1={2,3,4},array2={3,4,3};
+         System.out.println(new Solution().firstUniqChar("leetcode"));
     }
 }
