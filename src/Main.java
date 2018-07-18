@@ -1,4 +1,4 @@
-import _10_Regular_Expression_Matching.*;
+import _43_Multiply_Strings.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -20,6 +20,6 @@ public class Main {
         }
         tail.next = tmp;*/
 
-         System.out.println(new Solution().isMatch("aa","a*"));
+         System.out.println(new Solution().multiply("6","501"));
     }
 }
