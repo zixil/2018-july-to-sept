@@ -1,4 +1,4 @@
-import _387_First_Unique_Character_in_a_String.*;
+import _93_Restore_IP_Addresses.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -21,6 +21,6 @@ public class Main {
         tail.next = tmp;*/
 
         //int[] array1={2,3,4},array2={3,4,3};
-         System.out.println(new Solution().firstUniqChar("leetcode"));
+         System.out.println(new Solution().restoreIpAddresses("010010"));
     }
 }
