@@ -15,12 +15,19 @@ public class Solution {
 
     List<Integer> spiralOrder(int[][] matrix, int num) {
         LinkedList<Integer> result = new LinkedList<>();
-        int tmpCL = clen - num * 2, tmpRL = rlen - num * 2, cLast = clen - num, rLast = rlen - num;
+        int tmpCL = clen - num * 2, tmpRL = rlen - num * 2, cLast = clen - num - 1, rLast = rlen - num - 1;
         if (tmpRL == 0 || tmpCL == 0) return result;
+        if (tmpRL == 1) {
+            for (int i = num; i <= cLast; ++i) result.add(matrix[i][rLast]);
+            return result;
+        } else if (tmpCL == 1) {
+            for (int i = num; i <= rLast; ++i) result.add(matrix[cLast][i]);
+            return result;
+        }
         for (int i = num; i < rLast; ++i) result.add(matrix[num][i]);
-        for (int i = num + 1; i < cLast; ++i) result.add(matrix[i][cLast]);
-        for (int i = rLast - 1; i >= num; --i) result.add(matrix[rLast][i]);
-        for (int i = cLast - 1; i > num; --i) result.add(matrix[i][num]);
+        for (int i = num; i < cLast; ++i) result.add(matrix[i][rLast]);
+        for (int i = rLast; i > num; --i) result.add(matrix[cLast][i]);
+        for (int i = cLast; i > num; --i) result.add(matrix[i][num]);
         result.addAll(spiralOrder(matrix, num + 1));
         return result;
     }
