@@ -21,6 +21,6 @@ public class Main {
         tail.next = tmp;*/
 
         //int[] array1={2,3,4},array2={3,4,3};
-         System.out.println(new Solution().restoreIpAddresses("010010"));
+         System.out.println(new Solution());
     }
 }

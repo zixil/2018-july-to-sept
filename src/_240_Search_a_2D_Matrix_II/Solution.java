@@ -14,7 +14,7 @@ public class Solution {
     }
 
     boolean searchMatrix(int x1, int y1, int x2, int y2) {
-        if(x1==x2||y1==y2) return false;
+        if (x1 == x2 || y1 == y2) return false;
         if (x2 - x1 == 1) {
             for (int i : matrix[x1]) if (i == target) return true;
             return false;
@@ -23,16 +23,16 @@ public class Solution {
             for (int i = x1; i < x2; ++i) if (matrix[i][y1] == target) return true;
             return false;
         }
-        int leftBound=0, rightBound=Math.min(x2 - x1,y2-y1);
+        int leftBound = 0, rightBound = Math.min(x2 - x1, y2 - y1);
         while (rightBound - leftBound > 1) {
             int i = (leftBound + rightBound) / 2;
-            if (matrix[x1+i][y1+i] == target) return true;
-            if (matrix[x1+i][y1+i] < target) {
+            if (matrix[x1 + i][y1 + i] == target) return true;
+            if (matrix[x1 + i][y1 + i] < target) {
                 leftBound = i;
-            } else if (matrix[x1+i][y1+i] > target) {
+            } else if (matrix[x1 + i][y1 + i] > target) {
                 rightBound = i;
             }
         }
-        return searchMatrix(x1+rightBound,y1,x2,y1+rightBound)||searchMatrix(x1,y1+rightBound,x1+rightBound,y2);
+        return searchMatrix(x1 + rightBound, y1, x2, y1 + rightBound) || searchMatrix(x1, y1 + rightBound, x1 + rightBound, y2);
     }
 }
