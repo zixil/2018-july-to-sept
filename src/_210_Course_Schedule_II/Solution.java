@@ -64,7 +64,7 @@ public class Solution {
         LinkedList<Integer> list = new LinkedList<>();
         while (!roots.isEmpty()) {
             int tmp = roots.poll();
-            if (!added[tmp]) {
+            if (!added[tmp]&&postAdded(tmp)) {
                 list.add(tmp);
                 added[tmp] = true;
                 for (Integer i : this.prerequisites[tmp])
@@ -73,5 +73,10 @@ public class Solution {
             }
         }
         return list;
+    }
+
+    boolean postAdded(int n){
+        for(Integer i:postrequisites[n]) if(!added[i]) return false;
+        return true;
     }
 }
