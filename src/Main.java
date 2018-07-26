@@ -1,4 +1,4 @@
-import _400_Nth_Digit.*;
+import _486_Predict_the_Winner.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -20,7 +20,7 @@ public class Main {
         }
         tail.next = tmp;*/
 
-        int[] array1={90,100,50,70,20,40,10,51};
-         System.out.println(new Solution().findNthDigit(2147483647));
+        int[] array1={0,0,7,6,5,6,1};
+         System.out.println(new Solution().PredictTheWinner(array1));
     }
 }
