@@ -1,4 +1,4 @@
-import _486_Predict_the_Winner.*;
+import _135_Candy.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -20,7 +20,7 @@ public class Main {
         }
         tail.next = tmp;*/
 
-        int[] array1={0,0,7,6,5,6,1};
-         System.out.println(new Solution().PredictTheWinner(array1));
+        int[] array1={2,2,1};
+         System.out.println(new Solution().candy(array1));
     }
 }
