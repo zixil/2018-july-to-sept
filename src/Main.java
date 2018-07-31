@@ -1,4 +1,4 @@
-import _274_H_Index.*;
+import _306_Additive_Number.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -21,6 +21,6 @@ public class Main {
         tail.next = tmp;*/
 
         int[] array1={2,2,2,4,4,4};
-         System.out.println(new Solution().hIndex(array1));
+         System.out.println(new Solution().isAdditiveNumber("12345"));
     }
 }
