@@ -1,4 +1,4 @@
-import _306_Additive_Number.*;
+import _567_Permutation_in_String.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -21,6 +21,6 @@ public class Main {
         tail.next = tmp;*/
 
         int[] array1={2,2,2,4,4,4};
-         System.out.println(new Solution().isAdditiveNumber("12345"));
+         System.out.println(new Solution().checkInclusion("ab","eidboaoo"));
     }
 }
