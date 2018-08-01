@@ -6,11 +6,10 @@ import java.util.Queue;
 
 public class Solution {
     public int findBottomLeftValue(TreeNode root) {
-        LinkedList<TreeNode> curLayer = new LinkedList<>();
-        LinkedList<TreeNode> nextLayer = new LinkedList<>();
+        var curLayer = new LinkedList<TreeNode>();
+        var nextLayer = new LinkedList<TreeNode>();
         curLayer.add(root);
-        int layer = 0;
-        ListIterator<TreeNode> iter = curLayer.listIterator();
+        var iter = curLayer.iterator();
         while (true) {
             TreeNode tmp = iter.next();
             if (tmp.left != null) nextLayer.add(tmp.left);
