@@ -1,4 +1,4 @@
-import _171_Excel_Sheet_Column_Number.Solution;
+import _870_Advantage_Shuffle.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,7 +16,8 @@ public class Main {
         }
         tail.next = tmp;*/
 
-        int[] array1={2,2,2,4,4,4};
-         System.out.println(new Solution().checkInclusion("ab","eidboaoo"));
+        int[] array1 = {817556235, 232246148, 424291784, 13856114, 113666578, 513996259, 791310549, 341026786, 319348491, 40812144};
+        int[] array2 = {99616046, 148514886, 206257807, 569848817, 358893433, 977727091, 284109958, 856279522, 91774240, 527604738};
+        System.out.println(new Solution().advantageCount(array1,array2));
     }
 }

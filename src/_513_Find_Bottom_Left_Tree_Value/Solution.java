@@ -1,15 +1,16 @@
 package _513_Find_Bottom_Left_Tree_Value;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Queue;
 
 public class Solution {
     public int findBottomLeftValue(TreeNode root) {
-        var curLayer = new LinkedList<TreeNode>();
-        var nextLayer = new LinkedList<TreeNode>();
+        LinkedList<TreeNode> curLayer = new LinkedList<>();
+        LinkedList<TreeNode> nextLayer= new LinkedList<>();
         curLayer.add(root);
-        var iter = curLayer.iterator();
+        Iterator<TreeNode> iter = curLayer.iterator();
         while (true) {
             TreeNode tmp = iter.next();
             if (tmp.left != null) nextLayer.add(tmp.left);
