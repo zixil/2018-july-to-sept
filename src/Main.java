@@ -1,8 +1,4 @@
-import _567_Permutation_in_String.*;
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.List;
+import _171_Excel_Sheet_Column_Number.Solution;
 
 public class Main {
     public static void main(String[] args) {
