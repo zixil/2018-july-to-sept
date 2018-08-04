@@ -5,11 +5,19 @@ public class Solution {
         int min = commonFactor(A, B);
         long a = A / min;
         long b = B / min;
-        long i = Math.min(a, b);
-        for (int num = 0; num < N; i++) {
-            if (i % b == 0 || i % a == 0) num++;
+        long block = a * b;
+        long numBlock = a + b - 1;
+        long i = 0;
+        int iA = 0, iB = 0;
+
+        for (int num = 0; num <= N % numBlock; num++) {
+            if (iA * a > iB * b) {
+                i = iA++ * a;
+            } else {
+                i = iB++ * b;
+            }
         }
-        return (int) (((i - 1) * min) % 1000000007);
+        return (int) (((i + N / numBlock * block) * min) % 1000000007);
     }
 
     int commonFactor(int a, int b) {
