@@ -1,7 +1,6 @@
 package _110_Balanced_Binary_Tree;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import DataStructures.TreeNode;
 
 public class Solution {
 

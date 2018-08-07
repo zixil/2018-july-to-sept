@@ -1,5 +1,7 @@
 package _284_Peeking_Iterator;
 
+import DataStructures.ListNode;
+
 import java.util.Iterator;
 
 public class PeekingIterator implements Iterator<Integer> {
@@ -36,12 +38,3 @@ public class PeekingIterator implements Iterator<Integer> {
 
 }
 
-class ListNode {
-    Integer val;
-    ListNode next;
-
-    ListNode(Integer n) {
-        val = n;
-        next = null;
-    }
-}

@@ -1,5 +1,7 @@
 package _142_Linked_List_Cycle_II;
 
+import DataStructures.ListNode;
+
 public class Solution {
     public ListNode detectCycle(ListNode head) {
         ListNode fast = head, slow = head;

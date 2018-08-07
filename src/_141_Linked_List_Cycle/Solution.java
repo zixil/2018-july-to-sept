@@ -1,5 +1,7 @@
 package _141_Linked_List_Cycle;
 
+import DataStructures.ListNode;
+
 public class Solution {
 
     public boolean hasCycle(ListNode head) {

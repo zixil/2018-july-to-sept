@@ -1,5 +1,7 @@
 package _92_Reverse_Linked_List_II;
 
+import DataStructures.ListNode;
+
 public class Solution {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         ListNode preHead = new ListNode(0);

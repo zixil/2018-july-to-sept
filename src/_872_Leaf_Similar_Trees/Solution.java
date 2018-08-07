@@ -1,5 +1,7 @@
 package _872_Leaf_Similar_Trees;
 
+import DataStructures.TreeNode;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 
