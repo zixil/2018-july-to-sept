@@ -1,4 +1,4 @@
-package _498_Diagonal_Traverse.Solution;
+package _498_Diagonal_Traverse;
 
 public class Solution {
     public int[] findDiagonalOrder(int[][] matrix) {
