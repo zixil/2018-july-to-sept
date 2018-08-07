@@ -1,4 +1,4 @@
-import _735_Asteroid_Collision.*;
+import _224_Basic_Calculator.*;
 
 import java.util.Arrays;
 
@@ -20,6 +20,6 @@ public class Main {
 
         int[] array1 = {5, 10, -5};
         char[][] array2 = {{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'}, {'1', '1', '1', '1', '1'}, {'1', '0', '0', '1', '0'}};
-        System.out.println(Arrays.toString(new Solution().asteroidCollision(array1)));
+        System.out.println(new Solution().calculate("(1+(4+5+2)-3)+(6+8)"));
     }
 }
