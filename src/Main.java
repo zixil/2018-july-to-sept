@@ -1,4 +1,6 @@
-import _85_Maximal_Rectangle.*;
+import _735_Asteroid_Collision.*;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,8 +18,8 @@ public class Main {
         }
         tail.next = tmp;*/
 
-        int[] array1 = {1, 1, 1, 0};
+        int[] array1 = {5, 10, -5};
         char[][] array2 = {{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'}, {'1', '1', '1', '1', '1'}, {'1', '0', '0', '1', '0'}};
-        System.out.println(new Solution().maximalRectangle(array2));
+        System.out.println(Arrays.toString(new Solution().asteroidCollision(array1)));
     }
 }
