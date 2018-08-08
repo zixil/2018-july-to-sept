@@ -8,10 +8,10 @@ public class Solution {
         long block = a * b;
         long numBlock = a + b - 1;
         long i = 0;
-        int iA = 0, iB = 0;
+        int iA = 1, iB = 1;
 
-        for (int num = 0; num <= N % numBlock; num++) {
-            if (iA * a > iB * b) {
+        for (int num = 1; num <= N % numBlock; num++) {
+            if (iA * a < iB * b) {
                 i = iA++ * a;
             } else {
                 i = iB++ * b;
