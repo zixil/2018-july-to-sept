@@ -1,4 +1,4 @@
-import _556_Next_Greater_Element_III.*;
+import _374_Guess_Number_Higher_or_Lower.*;
 
 import java.util.Arrays;
 
@@ -20,6 +20,6 @@ public class Main {
 
         int[] array1 = {5, 10, -5};
         char[][] array2 = {{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'}, {'1', '1', '1', '1', '1'}, {'1', '0', '0', '1', '0'}};
-        System.out.println(new Solution().nextGreaterElement(12185));
+        System.out.println(new Solution().guessNumber(200));
     }
 }
