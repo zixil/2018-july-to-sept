@@ -12,7 +12,7 @@ public class Solution {
             if (c[i] != '9') {
                 int max = i;
                 for (int j = i; j < c.length; ++j) {
-                    if (c[max] < c[j]) max = j;
+                    if (c[max] <= c[j]) max = j;
                 }
                 if (c[max] == c[i]) continue;
                 char tmp = c[max];
