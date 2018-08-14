@@ -1,4 +1,4 @@
-import _374_Guess_Number_Higher_or_Lower.*;
+import _491_Increasing_Subsequences.*;
 
 import java.util.Arrays;
 
@@ -18,8 +18,8 @@ public class Main {
         }
         tail.next = tmp;*/
 
-        int[] array1 = {5, 10, -5};
+        int[] array1 = {4,6,7,7};
         char[][] array2 = {{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'}, {'1', '1', '1', '1', '1'}, {'1', '0', '0', '1', '0'}};
-        System.out.println(new Solution().guessNumber(200));
+        System.out.println(Arrays.deepToString(new Solution().findSubsequences(array1).toArray()));
     }
 }
