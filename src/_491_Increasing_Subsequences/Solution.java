@@ -18,11 +18,7 @@ public class Solution {
                 start.add(nums[i]);
             }
         }
-        return list.stream().filter(
-                (i) -> i.size() >= 2
-        ).map(
-                (i) -> i.stream().map((n) -> nums[n]).collect(Collectors.toList())
-        ).collect(Collectors.toList());
+        return list;
     }
 
     List<LinkedList<Integer>> findSubsequences(LinkedList<Integer> pre, int start) {
@@ -31,18 +27,15 @@ public class Solution {
         List<LinkedList<Integer>> result = new LinkedList<>();
         for (int i = start; i < nums.length; ++i) {
             if (nums[i] == cur) {
-                subarray.add(i);
-                LinkedList<Integer> curList = new LinkedList<>(subarray);
-                result.add(curList);
-            }
-        }
-
-        for (LinkedList<Integer> curPre : new LinkedList<>(result)) {
-            HashSet<Integer> starts = new HashSet<>();
-            for (int i = curPre.getLast() + 1; i < nums.length; ++i) {
-                if (nums[i] > cur && !starts.contains(nums[i])) {
-                    result.addAll(findSubsequences(curPre, i));
-                    starts.add(nums[i]);
+                subarray.add(nums[i]);
+                if (subarray.size() >= 2)
+                    result.add(new LinkedList<>(subarray));
+                HashSet<Integer> starts = new HashSet<>();
+                for (int j = i + 1; j < nums.length; ++j) {
+                    if (nums[j] > cur && !starts.contains(nums[j])) {
+                        result.addAll(findSubsequences(subarray, j));
+                        starts.add(nums[j]);
+                    }
                 }
             }
         }
