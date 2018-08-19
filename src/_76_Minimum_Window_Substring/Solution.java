@@ -19,5 +19,6 @@ public class Solution {
             }
         }
         return d == Integer.MAX_VALUE ? "" : s.substring(head, head + d);
+
     }
 }
