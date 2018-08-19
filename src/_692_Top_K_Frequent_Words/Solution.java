@@ -8,7 +8,7 @@ public class Solution {
         for (String i : words) {
             map.put(i, map.getOrDefault(i, 0) + 1);
         }
-        TreeSet<Comparable[]> set = new TreeSet<>((o1, o2) -> {
+        PriorityQueue<Comparable[]> set = new PriorityQueue<>((o1, o2) -> {
             int cmp = o1[1].compareTo(o2[1]);
             return cmp == 0 ? o1[0].compareTo(o2[0]) : -cmp;
         });
