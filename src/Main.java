@@ -3,6 +3,9 @@ import _491_Increasing_Subsequences.*;
 import java.util.Arrays;
 
 public class Main {
+    void haha(){
+        System.out.print(1);
+    }
     public static void main(String[] args) {
         /*
         int[] array={1,2,3,4,5};
@@ -21,5 +24,6 @@ public class Main {
         int[] array1 = {4,6,7,7};
         char[][] array2 = {{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'}, {'1', '1', '1', '1', '1'}, {'1', '0', '0', '1', '0'}};
         System.out.println(Arrays.deepToString(new Solution().findSubsequences(array1).toArray()));
+
     }
 }
