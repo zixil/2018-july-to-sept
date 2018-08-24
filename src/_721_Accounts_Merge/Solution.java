@@ -33,7 +33,7 @@ public class Solution {
                 ++j1;
             }
         }
-        
+        return new LinkedList<>();
     }
 
     class JointSet {

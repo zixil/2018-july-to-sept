@@ -20,10 +20,12 @@ public class Main {
             tmp=tmp.next;
         }
         tail.next = tmp;*/
-
+/*
         int[] array1 = {4,6,7,7};
         char[][] array2 = {{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'}, {'1', '1', '1', '1', '1'}, {'1', '0', '0', '1', '0'}};
         System.out.println(Arrays.deepToString(new Solution().findSubsequences(array1).toArray()));
+*/
+        String[] a="  0.1".split(" ");
 
     }
 }
